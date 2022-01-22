@@ -1,13 +1,11 @@
 platform :ios, '11.0'
 inhibit_all_warnings!
 
-target 'HWLDemoForUIButton+hwlBlock' do
-  pod 'ObjectiveSugar', '~> 0.5'
+project './HWLDemoForUIButton+hwlBlock/HWLDemoForUIButton+hwlBlock.xcodeproj'
 
-  # target 'MyAppTests' do
-  #   inherit! :search_paths
-  #   pod 'OCMock', '~> 2.0.1'
-  # end
+target 'HWLDemoForUIButton+hwlBlock' do
+  # pod 'UIButton-hwlBlock', '~> v1.0.0'
+  pod 'UIButton-hwlBlock', :path => '../UIButton-hwlBlock.podspec', :inhibit_warnings => false
 end
 
 post_install do |installer|

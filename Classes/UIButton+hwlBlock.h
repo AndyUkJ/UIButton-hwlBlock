@@ -11,7 +11,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 typedef void (^DMKControlEventsActionBlock)(id sender);
 
-@interface UIButton(dmkBlock)
+@interface UIButton(hwlBlock)
 - (void)handleControlEvent:(UIControlEvents)event withBlock:(DMKControlEventsActionBlock)action;
 - (void)removeHandleBlockByControlEvent:(UIControlEvents)event;
 @end

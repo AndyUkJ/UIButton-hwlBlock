@@ -5,16 +5,16 @@
 //  Created by jipengfei on 2022/1/18.
 //
 
-#import "UIButton+dmkBlock.h"
+#import "UIButton+hwlBlock.h"
 #import <objc/runtime.h>
 
 #define dmk_eventBlockMethodPrefix              @"dmk_callActionBlock_"
 
-@interface UIButton(dmkBlock)
+@interface UIButton(hwlBlock)
 @property (nonatomic, copy) NSDictionary *eventsActionBlockDic;
 @end
 
-@implementation UIButton(dmkBlock)
+@implementation UIButton(hwlBlock)
 
 - (void)handleControlEvent:(UIControlEvents)event withBlock:(DMKControlEventsActionBlock)action {
     NSMutableDictionary *dic = [[NSMutableDictionary alloc] initWithDictionary:self.eventsActionBlockDic?:@{}];

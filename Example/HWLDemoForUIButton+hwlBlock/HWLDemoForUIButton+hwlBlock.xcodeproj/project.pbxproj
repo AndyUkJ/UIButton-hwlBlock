@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		791AFE48DEACDFE9A6AAC4B9 /* libPods-HWLDemoForUIButton+hwlBlock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AF8E4397298E85C6378DC205 /* libPods-HWLDemoForUIButton+hwlBlock.a */; };
 		834A119E279C1491004DC4BC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 834A119D279C1491004DC4BC /* AppDelegate.m */; };
 		834A11A1279C1491004DC4BC /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 834A11A0279C1491004DC4BC /* SceneDelegate.m */; };
 		834A11A4279C1491004DC4BC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 834A11A3279C1491004DC4BC /* ViewController.m */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		825E3869CB5CF922E45FDA12 /* Pods-HWLDemoForUIButton+hwlBlock.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HWLDemoForUIButton+hwlBlock.debug.xcconfig"; path = "Target Support Files/Pods-HWLDemoForUIButton+hwlBlock/Pods-HWLDemoForUIButton+hwlBlock.debug.xcconfig"; sourceTree = "<group>"; };
 		834A1199279C1491004DC4BC /* HWLDemoForUIButton+hwlBlock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HWLDemoForUIButton+hwlBlock.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		834A119C279C1491004DC4BC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		834A119D279C1491004DC4BC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -54,6 +56,8 @@
 		834A11BF279C1492004DC4BC /* HWLDemoForUIButton+hwlBlockUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "HWLDemoForUIButton+hwlBlockUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		834A11C3279C1492004DC4BC /* HWLDemoForUIButton_hwlBlockUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HWLDemoForUIButton_hwlBlockUITests.m; sourceTree = "<group>"; };
 		834A11C5279C1492004DC4BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF8E4397298E85C6378DC205 /* libPods-HWLDemoForUIButton+hwlBlock.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HWLDemoForUIButton+hwlBlock.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB8933F1E85A31FB2562C911 /* Pods-HWLDemoForUIButton+hwlBlock.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HWLDemoForUIButton+hwlBlock.release.xcconfig"; path = "Target Support Files/Pods-HWLDemoForUIButton+hwlBlock/Pods-HWLDemoForUIButton+hwlBlock.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				791AFE48DEACDFE9A6AAC4B9 /* libPods-HWLDemoForUIButton+hwlBlock.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +86,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6014EA2CE42329A696C3E7F2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				825E3869CB5CF922E45FDA12 /* Pods-HWLDemoForUIButton+hwlBlock.debug.xcconfig */,
+				BB8933F1E85A31FB2562C911 /* Pods-HWLDemoForUIButton+hwlBlock.release.xcconfig */,
+			);
+			name = Pods;
+			path = ../Pods;
+			sourceTree = "<group>";
+		};
 		834A1190279C1491004DC4BC = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +103,8 @@
 				834A11B7279C1492004DC4BC /* HWLDemoForUIButton+hwlBlockTests */,
 				834A11C2279C1492004DC4BC /* HWLDemoForUIButton+hwlBlockUITests */,
 				834A119A279C1491004DC4BC /* Products */,
+				6014EA2CE42329A696C3E7F2 /* Pods */,
+				A5ECD77ED93F4452AA58D947 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -137,6 +154,14 @@
 			path = "HWLDemoForUIButton+hwlBlockUITests";
 			sourceTree = "<group>";
 		};
+		A5ECD77ED93F4452AA58D947 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AF8E4397298E85C6378DC205 /* libPods-HWLDemoForUIButton+hwlBlock.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -144,6 +169,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 834A11C8279C1492004DC4BC /* Build configuration list for PBXNativeTarget "HWLDemoForUIButton+hwlBlock" */;
 			buildPhases = (
+				DC9EDBD6205DFF2F301AA1DF /* [CP] Check Pods Manifest.lock */,
 				834A1195279C1491004DC4BC /* Sources */,
 				834A1196279C1491004DC4BC /* Frameworks */,
 				834A1197279C1491004DC4BC /* Resources */,
@@ -260,6 +286,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		DC9EDBD6205DFF2F301AA1DF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HWLDemoForUIButton+hwlBlock-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		834A1195279C1491004DC4BC /* Sources */ = {
@@ -438,6 +489,7 @@
 		};
 		834A11C9279C1492004DC4BC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 825E3869CB5CF922E45FDA12 /* Pods-HWLDemoForUIButton+hwlBlock.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -456,6 +508,7 @@
 		};
 		834A11CA279C1492004DC4BC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB8933F1E85A31FB2562C911 /* Pods-HWLDemoForUIButton+hwlBlock.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
