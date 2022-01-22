@@ -9,8 +9,6 @@
 #import <objc/runtime.h>
 #import "HWLEventTargetWithBlock.h"
 
-#define dmk_eventBlockMethodPrefix              @"dmk_callActionBlock_"
-
 @interface UIButton(hwlBlock)
 @property (nonatomic, copy) NSDictionary *eventsActionBlockDic;
 @end
