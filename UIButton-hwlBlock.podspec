@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "UIButton-hwlBlock"
-  spec.version      = "1.0.0"
+  spec.version      = "1.0.1"
   spec.summary      = "Add event for button with block."
 
   # This description is used to generate tags and improve search results.
@@ -75,7 +75,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "git@github.com:huaweiluo/UIButton-hwlBlock.git", :tag => "v1.0.0" }
+  spec.source       = { :git => "git@github.com:huaweiluo/UIButton-hwlBlock.git", :tag => "v1.0.1" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -87,7 +87,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.source_files  = "Classes", "Classes/**/*.{h,m}"
-  spec.exclude_files = "Classes/Exclude"
+  # spec.exclude_files = "Classes/Exclude"
 
   # spec.public_header_files = "Classes/**/*.h"
 
