@@ -1,5 +1,7 @@
 # UIButton-hwlBlock
-add event for button with block.
+Add event for button with block.
+
+It also supports multiple event block being added at the same time, and supports any control event.
 
 
 # cocoapods
