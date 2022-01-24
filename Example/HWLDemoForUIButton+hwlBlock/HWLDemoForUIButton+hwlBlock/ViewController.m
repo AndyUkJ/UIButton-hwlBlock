@@ -7,7 +7,9 @@
 
 #import "ViewController.h"
 
-#if __has_include(<UIButton-hwlBlock/UIButton+hwlBlock.h>)
+#define hlwCategorySwitch         __has_include(<UIButton-hwlBlock/UIButton+hwlBlock.h>)
+
+#if hlwCategorySwitch
 #import <UIButton-hwlBlock/UIButton+hwlBlock.h>
 #else
 #import <UIButton-hwlBlock/UIButton+hwlBlockF.h>
@@ -58,7 +60,7 @@
 #pragma mark -
 #pragma mark internal method
 - (void)handleEventBlock {
-#if __has_include(<UIButton-hwlBlock/UIButton+hwlBlock.h>)
+#if hlwCategorySwitch
     [self.btnClick handleControlEvent:UIControlEventTouchDown withBlock:^(id  _Nonnull sender) {
         NSLog(@"click block UIControlEventTouchDown.");
         self.btnClick.backgroundColor = [UIColor redColor];
