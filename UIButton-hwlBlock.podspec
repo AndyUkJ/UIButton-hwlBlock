@@ -97,8 +97,8 @@ Pod::Spec.new do |spec|
     et.source_files = "Classes/HWLEventTargetBlock/**/*.{h,m}"
   end
   
-  spec.subspec 'HWLForwardBlock' do |et|
-    et.source_files = "Classes/HWLForwardBlock/**/*.{h,m}"
+  spec.subspec 'HWLForwardBlock' do |fb|
+    fb.source_files = "Classes/HWLForwardBlock/**/*.{h,m}"
   end
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
