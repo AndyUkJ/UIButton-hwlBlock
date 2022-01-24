@@ -7,7 +7,7 @@
 
 #import "ViewController.h"
 
-#define hlwCategorySwitch         __has_include(<UIButton-hwlBlock/UIButton+hwlBlock.h>)
+#define hlwCategorySwitch         __has_include(<UIButton-hwlBlock/UIButton+hwlBlock1.h>)
 
 #if hlwCategorySwitch
 #import <UIButton-hwlBlock/UIButton+hwlBlock.h>
