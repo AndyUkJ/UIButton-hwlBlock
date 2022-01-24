@@ -6,7 +6,12 @@
 //
 
 #import "ViewController.h"
+
+#if __has_include(<UIButton-hwlBlock/UIButton+hwlBlock.h>)
 #import <UIButton-hwlBlock/UIButton+hwlBlock.h>
+#else
+#import <UIButton-hwlBlock/UIButton+hwlBlockF.h>
+#endif
 
 @interface ViewController ()
 @property (nonatomic, strong) UIButton *btnClick;
@@ -20,18 +25,6 @@
     // Do any additional setup after loading the view.
     
     [self handleEventBlock];
-    
-    [self.btnClear handleControlEvent:UIControlEventTouchUpInside withBlock:^(id  _Nonnull sender) {
-        if (1013==self.btnClear.tag) {
-            [self.btnClick removeHandleBlockByControlEvent:UIControlEventTouchDown];
-            [self.btnClick removeHandleBlockByControlEvent:UIControlEventTouchUpInside];
-            self.btnClear.backgroundColor = [UIColor greenColor];
-            [self.btnClear setTitle:@"RestoreEventBlock" forState:UIControlStateNormal];
-            self.btnClear.tag = 1314;
-        } else {
-            [self handleEventBlock];
-        }
-    }];
 }
 
 - (void)viewDidLayoutSubviews {
@@ -65,6 +58,7 @@
 #pragma mark -
 #pragma mark internal method
 - (void)handleEventBlock {
+#if __has_include(<UIButton-hwlBlock/UIButton+hwlBlock.h>)
     [self.btnClick handleControlEvent:UIControlEventTouchDown withBlock:^(id  _Nonnull sender) {
         NSLog(@"click block UIControlEventTouchDown.");
         self.btnClick.backgroundColor = [UIColor redColor];
@@ -78,6 +72,48 @@
     self.btnClear.tag = 1013;
     self.btnClear.backgroundColor = [UIColor redColor];
     [self.btnClear setTitle:@"ClearEventBlock" forState:UIControlStateNormal];
+    
+    [self.btnClear handleControlEvent:UIControlEventTouchUpInside withBlock:^(id  _Nonnull sender) {
+        if (1013==self.btnClear.tag) {
+            [self.btnClick removeHandleBlockByControlEvent:UIControlEventTouchDown];
+            [self.btnClick removeHandleBlockByControlEvent:UIControlEventTouchUpInside];
+            self.btnClear.backgroundColor = [UIColor greenColor];
+            [self.btnClear setTitle:@"RestoreEventBlock" forState:UIControlStateNormal];
+            self.btnClear.tag = 1314;
+        } else {
+            [self handleEventBlock];
+        }
+    }];
+    
+#else
+    
+    [self.btnClick handleControlEventF:UIControlEventTouchDown withBlock:^(id  _Nonnull sender) {
+        NSLog(@"click block UIControlEventTouchDown.");
+        self.btnClick.backgroundColor = [UIColor redColor];
+    }];
+
+    [self.btnClick handleControlEventF:UIControlEventTouchUpInside withBlock:^(id  _Nonnull sender) {
+        NSLog(@"click block UIControlEventTouchUpInside.");
+        self.btnClick.backgroundColor = [UIColor orangeColor];
+    }];
+    
+    self.btnClear.tag = 1013;
+    self.btnClear.backgroundColor = [UIColor redColor];
+    [self.btnClear setTitle:@"ClearEventBlock" forState:UIControlStateNormal];
+    
+    [self.btnClear handleControlEventF:UIControlEventTouchUpInside withBlock:^(id  _Nonnull sender) {
+        if (1013==self.btnClear.tag) {
+            [self.btnClick removeHandleBlockByControlEventF:UIControlEventTouchDown];
+            [self.btnClick removeHandleBlockByControlEventF:UIControlEventTouchUpInside];
+            self.btnClear.backgroundColor = [UIColor greenColor];
+            [self.btnClear setTitle:@"RestoreEventBlock" forState:UIControlStateNormal];
+            self.btnClear.tag = 1314;
+        } else {
+            [self handleEventBlock];
+        }
+    }];
+    
+#endif
 }
 
 @end

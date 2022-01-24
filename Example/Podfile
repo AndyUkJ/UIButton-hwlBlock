@@ -4,8 +4,8 @@ inhibit_all_warnings!
 project './HWLDemoForUIButton+hwlBlock/HWLDemoForUIButton+hwlBlock.xcodeproj'
 
 target 'HWLDemoForUIButton+hwlBlock' do
-  pod 'UIButton-hwlBlock', '~> 1.0.4'
-#  pod 'UIButton-hwlBlock', :path => '../UIButton-hwlBlock.podspec', :inhibit_warnings => false
+#  pod 'UIButton-hwlBlock', '~> 1.0.4'
+  pod 'UIButton-hwlBlock', :path => '../UIButton-hwlBlock.podspec', :inhibit_warnings => false
 end
 
 post_install do |installer|
