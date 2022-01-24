@@ -75,7 +75,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
   
-  spec.source       = { :git => "git@github.com:huaweiluo/UIButton-hwlBlock.git", :tag => "v1.0.4" }
+  spec.source       = { :git => "git@github.com:huaweiluo/UIButton-hwlBlock.git", :tag => "v1.0.5" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
