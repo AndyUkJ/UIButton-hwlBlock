@@ -6,7 +6,7 @@ It also supports multiple event block being added at the same time, and supports
 
 # cocoapods
 - pod search UIButton-hwlBlock --ios --simple
-- Podfile add [pod 'UIButton-hwlBlock', '~> 1.0.6', subspecs: ["HWLEventTargetBlock", "HWLForwardBlock"]]
+- Podfile add [pod 'UIButton-hwlBlock', '~> 1.0.7', subspecs: ["HWLEventTargetBlock", "HWLForwardBlock"]]
 - pod install
 
 # upload to cocoapods
